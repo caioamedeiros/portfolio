@@ -1,2 +1,4 @@
 # portfolio
-Portfolio de Desenvolvedor
+Portfólio de Desenvolvedor
+
+Esta página tem como objetivo divulgar meus principais projetos.
