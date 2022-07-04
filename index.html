@@ -197,7 +197,7 @@
                             
                             <p>Após realizar o treinamento do modelo, foram realizados dois testes de detecção. O primeiro utilizando um vídeo para testar a capacidade do modelo em realizar generalizações da classe “caio_de_andrade_medeiros”, e o segundo visando testar a capacidade do modelo em identificar esta classe de objeto em uma imagem estática.</p>
                             
-                            <span class="d-none d-lg-block"><img class="imagem_tcc" src="assets/img/imagem_caio.jpeg" alt="..." /></span>
+                            <span class="d-none d-lg-block"><img class="imagem_tcc1" src="assets/img/imagem_caio.jpeg" alt="..." /></span>
                                 
                             <p>O resultado obteve uma confiança de 58% na detecção verdadeiro-positivo da classe desejada, no entanto, foi verificado um resultado falso-positivo e um resultado falso-negativo. Apesar da classe de interesse ter sido detectada no teste utilizando um vídeo, o resultado não foi satisfatório, pois eram esperados percentuais de confiança menores no momento em que o rosto era disfarçado. O percentual de confiança nos dois testes foi menor que o verificado no modelo pré-treinado do framework, o que indica que ainda existe um potencial de melhoria para aumento da acurácia e redução de viés. </p>
 
@@ -206,12 +206,14 @@
                             Your browser does not support the video tag.
                             </video>
                             
+                            <span class="d-none d-lg-block"><img class="gif_tcc" src="assets/img/gif_caio_detect.gif" alt="..." /></span>
+                            
                             <p> Os gráficos abaixo possuem no eixo x a quantidade de iterações utilizada no treinamento do modelo, e no eixo y a proporção de erros que o modelo possui. As linhas azuis e vermelhas, demonstram respectivamente a variação de erros conforme aumentam as iterações nos dados de treino e nos dados de Validação. 
                             Sendo assim, é possível analisar que conforme as iterações aumentam a quantidade de erros diminui nas últimas iterações, assim como a precisão e o “Recall” aumentam conforme as iterações aumentam. Neste sentido, é possível observar que a partir do segundo treinamento, que passou a utilizar 120 iterações, o modelo passou a apresentar uma proporção de erros menor que o primeiro treinamento. Este resultado pode ser explicado em decorrência do dobro de iterações do algoritmo e de um aumento na quantidade de imagens de treino e de validação.
                             Esta tendencia de queda na curva de erros de treino e de validação passou a apresentar um ponto de inflexão após o algoritmo passar de 100 iterações no quarto treinamento. Isso caracteriza que o modelo passou de um ponto ótimo, e passou a operar em um ponto de “overfitting”, já que os erros passaram a aumentar nas últimas iterações, onde existe baixo erro de treinamento e alta quantidade de erros de validação.
                             Este ponto de inflexão no quarto treinamento também pode ser interpretado como o ponto de “Early Stopping”, já que os erros a partir desta quantidade de iterações passou a aumentar, definindo assim que este é a quantidade ótima de iterações para evitar o “overfitting”. Portanto, um modelo que possui “underfitting” terá alto erro de treinamento e alto erro de validação, enquanto um modelo “overfitting” terá um baixo erro de treinamento, mas um erro de validação alto.</p>
 
-                            <span class="d-none d-lg-block"><img class="imagem_tcc" src="assets/img/Epochs_loss_validacao_treino.png" alt="..." /></span>
+                            <span class="d-none d-lg-block"><img class="imagem_tcc2" src="assets/img/Epochs_loss_validacao_treino.png" alt="..." /></span>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Outubro 2020 - Junho 2022</span></div>
                     </div>
